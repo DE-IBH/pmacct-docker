@@ -16,5 +16,17 @@ Images are tagged according to the installed pmacct version. The images are base
 ## Usage
 
 ```
-$ docker run --rm --net=host --uts=host --cap-add=NET_ADMIN -v /path/to/config:/etc/pmacct:ro liske/pmacctd
+$ docker run --rm --net=host -v /path/to/confdir:/etc/pmacct:ro liske/pmacctd
+```
+
+```
+# docker-compose.yml example
+version: '3'
+services:
+  pmacct:
+    image: liske/pmacct
+    network_mode: host
+    volumes:
+      - ./conf/pmacct:/etc/pmacct:ro
+    restart: always
 ```

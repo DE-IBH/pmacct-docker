@@ -1,0 +1,8 @@
+version: '3'
+services:
+  eth0:
+    image: liske/pmacct
+    network_mode: host
+    volumes:
+      - ./conf/pmacct:/etc/pmacct:ro
+    restart: always
