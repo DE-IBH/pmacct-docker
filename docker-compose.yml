@@ -1,7 +1,7 @@
 version: '3'
 services:
   eth0:
-    image: liske/pmacct
+    image: ibhde/pmacct
     network_mode: host
     volumes:
       - ./conf/pmacct:/etc/pmacct:ro

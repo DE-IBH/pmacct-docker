@@ -8,15 +8,15 @@ Images are tagged according to the installed pmacct version. The images are base
 
 ### pmacct
 
-* [`1.6.1`, `latest` Dockerfile](https://github.com/liske/pmacct-docker/blob/master/pmacct-1.6.1-debian/Dockerfile)
+* [`1.6.1`, `latest` Dockerfile](https://github.com/DE-IBH/pmacct-docker/blob/master/pmacct-1.6.1-debian/Dockerfile)
 
-  [![Layers](https://images.microbadger.com/badges/image/liske/pmacct:1.6.1.svg)](https://images.microbadger.com/badges/image/liske/pmacct:1.6.1)
+  [![Layers](https://images.microbadger.com/badges/image/ibhde/pmacct:1.6.1.svg)](https://images.microbadger.com/badges/image/ibhde/pmacct:1.6.1)
   This image is build using *Debian stretch* and should be considered **stable**.
 
 ## Usage
 
 ```
-$ docker run --rm --net=host -v /path/to/confdir:/etc/pmacct:ro liske/pmacctd
+$ docker run --rm --net=host -v /path/to/confdir:/etc/pmacct:ro ibhde/pmacctd
 ```
 
 ```
@@ -24,7 +24,7 @@ $ docker run --rm --net=host -v /path/to/confdir:/etc/pmacct:ro liske/pmacctd
 version: '3'
 services:
   pmacct:
-    image: liske/pmacct
+    image: ibhde/pmacct
     network_mode: host
     volumes:
       - ./conf/pmacct:/etc/pmacct:ro
