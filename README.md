@@ -8,6 +8,11 @@ Images are tagged according to the installed pmacct version. The images are base
 
 ### pmacct
 
+* [`1.7.2`, `latest` Dockerfile](https://github.com/DE-IBH/pmacct-docker/blob/master/pmacct-1.7.2-debian/Dockerfile)
+
+  [![Layers](https://images.microbadger.com/badges/image/ibhde/pmacct:1.7.2.svg)](https://images.microbadger.com/badges/image/ibhde/pmacct:1.7.2)
+  This image is build using *Debian buster* and should be considered **testing**.
+
 * [`1.6.1`, `latest` Dockerfile](https://github.com/DE-IBH/pmacct-docker/blob/master/pmacct-1.6.1-debian/Dockerfile)
 
   [![Layers](https://images.microbadger.com/badges/image/ibhde/pmacct:1.6.1.svg)](https://images.microbadger.com/badges/image/ibhde/pmacct:1.6.1)
